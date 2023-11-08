@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "e022b8c0-48a7-4e7a-9173-8084e49b0ecd",
+		"name": "weather_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30890641"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7281/api/Values/GetResults",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7281/api/Values/GetResults",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7281",
+					"path": [
+						"api",
+						"Values",
+						"GetResults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7281/api/Values/GetResultsById?id=6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7281/api/Values/GetResultsById?id=6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7281",
+					"path": [
+						"api",
+						"Values",
+						"GetResultsById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7281/api/Values/DeleteResults?id=5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7281/api/Values/DeleteResults?id=5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7281",
+					"path": [
+						"api",
+						"Values",
+						"DeleteResults"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7281/api/Values/SaveResult?city=rio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7281/api/Values/SaveResult?city=rio",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7281",
+					"path": [
+						"api",
+						"Values",
+						"SaveResult"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "rio"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7281/api/Values/UpdateResult?id=10",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\r\n    \"location\": \"Rio\",\r\n    \"country\": \"Brazil\",\r\n    \"temp\": 24\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7281/api/Values/UpdateResult?id=10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7281",
+					"path": [
+						"api",
+						"Values",
+						"UpdateResult"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
